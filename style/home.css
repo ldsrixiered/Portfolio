@@ -16,7 +16,7 @@ header{
     align-items: center;
     justify-content: start;
     padding: 20px 30px;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     gap: 10%;
     border: 1px;
     margin: var(--accent-2);
@@ -96,3 +96,250 @@ nav a{
     font-family: var(--heading--);
     color: var(--primary-color);
 }
+
+
+/* here section start here */
+  
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    top: -40px;
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+  }
+
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+    
+  }
+
+
+    
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    padding: 10% 10% 30% 10%; /* Top, Right, Bottom, Left */
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+  }
+
+  .hero h1, .hero h3, .hero p {
+    text-align: left;
+    margin-bottom: 10px; /* Space between elements */
+    max-width: 60%; /* Prevent too wide text */
+}
+  
+
+.hero h1{
+  font-family: var(--heading--);
+  font-weight: 100;
+  font-style: italic;
+  font-size: 2em;
+  color: var(--secondary-color);
+ 
+}
+
+.hero p{
+  font-family: var(--secondary--);
+  color: var(--secondary-color);
+}
+
+.background-clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the full area */
+    z-index: -1; /* Places the video behind text content */
+  
+}
+
+.hero h3{
+  font-family: var(--heading--);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  font-weight: 100;
+}
+
+/* Sample section */
+
+section{
+  display: flex;
+  justify-content: space-around;
+
+  padding: 10% 5%;
+}
+
+.card {
+  width: 190px;
+  background: white;
+  padding: .4em;
+  border-radius: 6px ;
+  border: 1px solid var(--primary-color);
+  margin: 2px;
+  
+}
+
+.card-image-1 {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 130px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image-2 {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 130px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image-3 {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 130px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image-4 {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 130px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image-1 {
+  background-image: url('/asset/Untitled\ design\ \(2\).png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 130px; /* Keep or adjust height */
+  border-radius: 6px 6px 0 0;
+}
+
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+
