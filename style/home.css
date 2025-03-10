@@ -219,7 +219,14 @@ nav a{
   color: var(--secondary-color);
  
 }
+.hero h3::first-letter{
+  font-size: 2em;
+  color: var(--accent-1)
+}
 
+/* h3 span {
+  color: var(--accent-1);
+} */
 .hero p{
   font-family: var(--secondary--);
   color: var(--secondary-color);
@@ -249,6 +256,8 @@ nav a{
 section{
   display: flex;
   justify-content: space-around;
+  background-color: var(--accent-1);
+  margin: 0;
 
   padding: 10% 5%;
 }
@@ -292,7 +301,7 @@ section{
 }
 
 .card-image-1 {
-  background-image: url('/asset/Untitled\ design\ \(2\).png'); /* Replace with your image URL */
+  background-image: url('/asset/Untitled\ design\ \(1\).png'); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -343,3 +352,44 @@ section{
   cursor: pointer;
 }
 
+
+article{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 5em;
+  gap: 2em;
+  background-image: url(/asset/Untitled\ design\ \(3\).png);
+  background-size: cover;
+  background-position: center;
+  
+}
+
+article h2{
+  font-family: var(--heading--);
+  font-weight: 50;
+}
+
+article p{
+  font-family: var(--secondary--);
+  text-align: center;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 0  3em;
+  color: var(--primary-color);
+}
+
+article a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: var(--heading--);
+  font-weight: 50;
+  font-size: 2em;
+  border: 1px solid var(--secondary-color);
+  padding: 5px 10px;
+}
+
+article a:hover{
+  display: block;
+  filter: drop-shadow(0 0 10px);
+}
