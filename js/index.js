@@ -37,9 +37,15 @@ function type() {
 // Dark Mode Toggle
 function setupThemeToggle() {
   const toggleBtn = document.getElementById('themeToggle');
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    toggleBtn.textContent = "☀️";
+  }
   toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark');
-    toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    const isDark = document.body.classList.contains('dark');
+    toggleBtn.textContent = isDark ? "☀️" : "🌙";
+    localStorage.setItem("theme", isDark ? "dark" : "light");
   });
 }
 
@@ -51,7 +57,7 @@ function animateProgressBars() {
     setTimeout(() => {
       bar.style.width = percent;
       bar.textContent = percent;
-      bar.style.color = '#ffbe0bq'; // your cute yellow percent color 💛
+      bar.style.color = '#ffbe0b';
     }, 1000);
   });
 }

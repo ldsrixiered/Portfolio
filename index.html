@@ -7,19 +7,21 @@
   <link rel="stylesheet" href="style/index.css">
   
 </head>
+</head>
 <body>
 
   <nav>
     <div class="logo"> <p>Rixie</p></div>
     <div class="nav-links">
-      <a href="#"><span>Home</span></a>
+      <a href="#home"><span>Home</span></a>
       <a href="#services"><span>Services</span></a>
+      <a href="#skills"><span>Skills</span></a>
       <a href="#contact"><span>Contact</span></a>
     </div>
     <div class="toggle" id="themeToggle">🌙</div>
   </nav>
 
-  <div class="container">
+  <div class="container" id="home">
     <h1><span id="text" class="typewriter"></span></h1>
     <p>We help businesses grow with professional virtual support in marketing, admin, and digital solutions.</p>
     <div class="btns">
@@ -31,10 +33,9 @@
   <section id="skills">
       <h2>✨ My Expertise ✨</h2>
 
-      <!-- HTML -->
       <div class="skill">
         <div class="skill-info">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
           <span>HTML</span>
         </div>
         <div class="progress-bar">
@@ -42,10 +43,9 @@
         </div>
       </div>
 
-      <!-- CSS -->
       <div class="skill">
         <div class="skill-info">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
           <span>CSS</span>
         </div>
         <div class="progress-bar">
@@ -53,10 +53,9 @@
         </div>
       </div>
 
-      <!-- JavaScript -->
       <div class="skill">
         <div class="skill-info">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
           <span>JavaScript</span>
         </div>
         <div class="progress-bar">
@@ -64,10 +63,9 @@
         </div>
       </div>
 
-      <!-- Python -->
       <div class="skill">
         <div class="skill-info">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
           <span>Python</span>
         </div>
         <div class="progress-bar">
@@ -75,144 +73,89 @@
         </div>
       </div>
 
-      <!-- WordPress -->
       <div class="skill">
         <div class="skill-info">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress Icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress">
           <span>WordPress</span>
         </div>
         <div class="progress-bar">
           <div class="progress" data-percent="80%"></div>
         </div>
       </div>
+  </section>
 
-      <!-- Shopify -->
-      <div class="skill">
-        <div class="skill-info">
-          <img src="https://logos-world.net/wp-content/uploads/2020/11/Shopify-Symbol.png" alt="Shopify Icon">
-          <span>Shopify</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" data-percent="85%"></div>
-        </div>
-      </div>
+  <section id="services">
+  
+  <h2>Services</h2>
+  <div class="card">
+    <div class="tilt-card" data-tilt>
+      <h3>Social Media Marketing</h3>
+      <p>Social media, managed and mastered.</p>
+      <lord-icon src="https://cdn.lordicon.com/ogjpwrxe.json" trigger="hover"
+      colors="primary:#222222,secondary:#d62828"></lord-icon>
+    </div>
 
-      <!-- Graphics Design -->
-      <div class="skill">
-        <div class="skill-info">
-          <img src="https://img.icons8.com/color/48/000000/adobe-photoshop--v1.png" alt="Graphics Design Icon">
-          <span>Graphics Design</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" data-percent="95%"></div>
-        </div>
-      </div>
+    <div class="tilt-card" data-tilt>
+      <h3>Website Management & SEO</h3>
+      <p>Your website, always updated and SEO-smart.</p>
+      <lord-icon src="https://cdn.lordicon.com/rpviwvwn.json" trigger="hover"
+      colors="primary:#222222,secondary:#d62828"></lord-icon>
+    </div>
 
-      <!-- Video Editing -->
-      <div class="skill">
-        <div class="skill-info">
-          <img src="https://img.icons8.com/color/48/000000/adobe-premiere-pro--v1.png" alt="Video Editing Icon">
-          <span>Video Editing</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" data-percent="90%"></div>
-        </div>
-      </div>
+    <div class="tilt-card" data-tilt>
+      <h3>Email Marketing</h3>
+      <p>Crafted campaigns that land—and get clicks.</p>
+      <lord-icon src="https://cdn.lordicon.com/xovdoewm.json" trigger="hover"
+      colors="primary:#222222,secondary:#d62828"></lord-icon>
+    </div>
 
-      <!-- SEO -->
-      <div class="skill">
-        <div class="skill-info">
-          <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/external-seo-digital-marketing-flatart-icons-outline-flatarticons.png" alt="SEO Icon">
-          <span>SEO</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" data-percent="85%"></div>
-        </div>
-      </div>
+    <div class="tilt-card" data-tilt>
+      <h3>Virtual Assistance</h3>
+      <p>Helping you save time by handling tasks efficiently.</p>
+      <lord-icon src="https://cdn.lordicon.com/exymduqj.json" trigger="hover" colors="primary:#222,secondary:#d62828"> </lord-icon>
+    </div>
 
+    <div class="tilt-card" data-tilt>
+      <h3>Content Creation</h3>
+      <p>Engaging posts, blogs, and graphics for your brand.</p>
+      <lord-icon src="https://cdn.lordicon.com/nocovwne.json" trigger="hover"
+      colors="primary:#222222,secondary:#d62828"></lord-icon>
+    </div>
 
-
-           <!-- Social Media Management -->
-      <div class="skill">
-        <div class="skill-info">
-          <img src="asset/social-media.png" alt="Social Media Management Icon">
-          <span>Social Media Management</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" data-percent="90%"></div>
-        </div>
-      </div>
-
-      <!-- B2B Lead Generation -->
-      <div class="skill">
-        <div class="skill-info">
-          <img src="asset/leader.png" alt="B2B Lead Generation Icon">
-          <span>B2B Lead Generation</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" data-percent="85%"></div>
-        </div>
-      </div>
+    <div class="tilt-card" data-tilt>
+      <h3>Data Entry & Admin</h3>
+      <p>Accurate data entry and organized admin support.</p>
+      <lord-icon src="https://cdn.lordicon.com/iltqorsz.json" trigger="hover"
+      colors="primary:#222222,secondary:#d62828"></lord-icon>
+    </div>
+  </div>
+</section>
 
   </section>
 
-  
-  <Section>
-    <h2>Service</h2>
-    <div class="card">
-        
-        <div class="tilt-card" data-tilt>
-        <h3>Social Media Marketing</h3>
-        <p>Social media, managed and mastered.</p>
-        <lord-icon src="https://cdn.lordicon.com/ogjpwrxe.json" trigger="hover"
-        colors="primary:#222222,secondary:#d62828">
-        </lord-icon>
-        </div>
+  <section id="contact">
+    <h2>📩 Get in Touch</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-        <div class="tilt-card" data-tilt>
-        <h3>Website Management & SEO</h3>
-        <p>Your website, always updated and SEO-smart.</p>
-        <lord-icon
-        src="https://cdn.lordicon.com/rpviwvwn.json"
-        trigger="hover"state="hover-rotate-up-to-down" colors="primary:#222222,secondary:#d62828">
-        </lord-icon>
-        </div>
-
-        <div class="tilt-card" data-tilt>
-        <h3>CRM Management</h3>
-        <p>Client relationships managed with care and clarity.</p>
-        <lord-icon src="https://cdn.lordicon.com/pfvaixkr.json" trigger="hover" colors="primary:#222222,secondary:#d62828"> </lord-icon>
-        </div>
-
-        <div class="tilt-card" data-tilt>
-        <h3>Email Marketing</h3>
-        <p>Crafted campaigns that land—and get clicks.</p>
-        <lord-icon src="https://cdn.lordicon.com/xovdoewm.json" trigger="hover" colors="primary:#222222,secondary:#d62828"> </lord-icon>
-        </div>
-
-        <div class="tilt-card" data-tilt>
-        <h3>General Virtual Assistance</h3>
-        <p>Tasks off your plate, time back in your day.</p>
-        <lord-icon src="https://cdn.lordicon.com/exymduqj.json" trigger="hover" colors="primary:#222,secondary:#d62828"> </lord-icon>
-        </div>
-
-        <div class="tilt-card" data-tilt>
-        <h3>Bookkepping</h3>
-        <p>Organized books, stress-free business.</p>
-        <lord-icon src="https://cdn.lordicon.com/bktacmnd.json" trigger="hover" colors="primary:#222222,secondary:#d62828"> </lord-icon>
-        </lord-icon>
-        </div>
- 
+  <footer>
+    <p>© 2025 Rixie Red Castro | Virtual Assistance Phenomenon</p>
+    <div class="footer-links">
+      <a href="#">LinkedIn</a> |
+      <a href="#">GitHub</a> |
+      <a href="mailto:youremail@example.com">Email Me</a>
     </div>
-    
-  </Section>
-
-  <footer style="text-align:center; padding: 30px 0;">
-    © 2025 Virtual Assistance Phenomenon. All rights reserved.
   </footer>
 
-  <script src="js/index.js"></script>
+  <!-- SCRIPTS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
   <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <script src="/js/index.js">
+  </script>
 </body>
 </html>
