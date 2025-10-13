@@ -68,3 +68,48 @@ window.addEventListener("DOMContentLoaded", () => {
   setupThemeToggle();
   animateProgressBars();
 });
+
+
+const logos = [
+    {
+      src: "asset/Ms San.jpg",
+      name: "Ms San Francisco Real Estate",
+      desc: "Real Estate in San Francisco Bay Area top 1# Coldwell Banker in san francisco Team "
+    },
+    {
+      src: "asset/FCCCF.webp",
+      name: "FCCCF",
+      desc: "Specializing in WordPress development, we build SEO-friendly and easy-to-manage websites for all industries."
+    },
+    {
+      src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      name: "Tailwind Design Co.",
+      desc: "Crafting clean, beautiful, and mobile-first designs powered by Tailwind CSS and modern UI/UX principles."
+    }
+  ];
+
+  let currentIndex = 0;
+  const logoImg = document.getElementById("logo");
+  const companyName = document.getElementById("company-name");
+  const companyDesc = document.getElementById("company-desc");
+
+  document.querySelector(".arrow.left").addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + logos.length) % logos.length;
+    updateContent();
+  });
+
+  document.querySelector(".arrow.right").addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % logos.length;
+    updateContent();
+  });
+
+  function updateContent() {
+    const current = logos[currentIndex];
+    logoImg.style.opacity = 0;
+    setTimeout(() => {
+      logoImg.src = current.src;
+      companyName.textContent = current.name;
+      companyDesc.textContent = current.desc;
+      logoImg.style.opacity = 1;
+    }, 200);
+  }

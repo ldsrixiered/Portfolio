@@ -215,16 +215,19 @@ p {
   margin: 0 3em;
   padding-bottom: 40px;
   flex-wrap: wrap;
+  
 }
 
 .tilt-card {
   background: white;
   padding: 2em;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
   width: 250px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 }
 
 .tilt-card:hover {
@@ -282,8 +285,8 @@ article{
 .icard {
   width: 190px;
   height: 254px;
-  background: rgb(38, 38, 38);
-  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333);
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .imge {
@@ -382,6 +385,134 @@ footer a:hover {
 }
 
 
-/* From Uiverse.io by 1osm */ 
+.project{
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.portfolio-section {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* LEFT SIDE */
+.portfolio-left {
+  flex: 1;
+  position: relative;
+  background-color: #ffebf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.portfolio-left img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #ff4d6d;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+/* RIGHT SIDE */
+.portfolio-right {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-right h2 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.portfolio-right p {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.learn-more-btn {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  align-self: flex-start;
+}
+
+.learn-more-btn:hover {
+  background-color: #ff8095;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .portfolio-section {
+    flex-direction: column;
+  }
+
+  .portfolio-left, .portfolio-right {
+    width: 100%;
+  }
+
+  .portfolio-left {
+    padding: 40px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .portfolio-right {
+    text-align: center;
+    align-items: center;
+  }
+
+  .learn-more-btn {
+    align-self: center;
+  }
+}
+
+
+
+
+
 
 
