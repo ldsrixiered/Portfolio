@@ -79,12 +79,12 @@ const logos = [
     {
       src: "asset/FCCCF.webp",
       name: "FCCCF",
-      desc: "Specializing in WordPress development, we build SEO-friendly and easy-to-manage websites for all industries."
+      desc: "Floyd Clifton Crouch Charity Foundation is a foundation found by Floyd Crouch no market has need they look for schoolarship "
     },
     {
-      src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
-      name: "Tailwind Design Co.",
-      desc: "Crafting clean, beautiful, and mobile-first designs powered by Tailwind CSS and modern UI/UX principles."
+      src: "asset/Logo2.png",
+      name: "Achromos.",
+      desc: "Achromos is Modern Labatory technology and main target is Goverment work "
     }
   ];
 
