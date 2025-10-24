@@ -23,6 +23,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   transition: 0.3s;
+
 }
 
 h1, h2, h3, p {
@@ -71,11 +72,11 @@ nav {
   font-weight: 500;
   padding: 10px;
   position: relative;
-  transition: top 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .nav-links a:hover {
-  top: -7px;
+  transform: translateY(-7px);
 }
 
 .nav-links a::after {
@@ -107,7 +108,8 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
+  position: sticky;
+  top: 0;
   padding: 0 20px;
   overflow: hidden;
   z-index: -1;
@@ -148,6 +150,7 @@ p {
   font-size: 1.2rem;
   max-width: 600px;
   margin: 20px auto;
+  color: var(--bg-color);
 }
 
 .btns {
@@ -264,7 +267,9 @@ p {
 .project {
   display: flex;
   justify-content: center;
-  padding: 50px 0;
+  padding: 10rem 0;
+  background-color: var(--bg-color);
+  height: 50vh;
 }
 
 .portfolio-section {
@@ -348,6 +353,7 @@ p {
 #contact {
   padding: 50px 20px;
   text-align: center;
+  background-color: var(--bg-color);
 }
 
 #contact form {
