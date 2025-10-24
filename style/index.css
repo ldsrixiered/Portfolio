@@ -146,7 +146,7 @@ h1 {
   50% { border-color: var(--primary-color); }
 }
 
-p {
+.api {
   font-size: 1.2rem;
   max-width: 600px;
   margin: 20px auto;
