@@ -272,12 +272,7 @@ h1 {
 .animate {
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(
-    90deg,
-    var(--bg-color),
-    rgba(255, 77, 166, 0.15),
-    var(--bg-color)
-  );
+  background: var(--bg-color);
   border: 2px solid var(--accent-2);
   padding: 1.5rem 0;
 }
