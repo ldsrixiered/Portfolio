@@ -93,7 +93,10 @@
           <div class="progress" data-percent="80%"></div>
         </div>
       </div>
+
   </section>
+
+  
 
   <section id="services">
   
@@ -143,6 +146,8 @@
 </section>
 
 
+
+
 <!-- project -->
 
 <section class="project">
@@ -163,7 +168,29 @@
 
 </section>
 
-  
+ 
+<!-- animatio -->
+
+<div class="animate">
+  <div class="wrapper">
+    <div class="img-item"><img src="/Icon/html5-original.svg" alt="HTML"></div>
+    <div class="img-item"><img src="/Icon/css3-original.svg" alt="CSS"></div>
+    <div class="img-item"><img src="/Icon/JS.svg" alt="JS"></div>
+    <div class="img-item"><img src="/Icon/React.svg" alt="React"></div>
+    <div class="img-item"><img src="/Icon/Python.svg" alt="Python"></div>
+    <div class="img-item"><img src="/Icon/Git.svg" alt="Git"></div>
+    <div class="img-item"><img src="/Icon/Github.svg" alt="Github"></div>
+    <div class="img-item"><img src="/Icon/Canva.svg" alt="Canva"></div>
+    <div class="img-item"><img src="/Icon/Figma.svg" alt="Figma"></div>
+    <div class="img-item"><img src="/Icon/Chrome.svg" alt="Chrome"></div>
+    <div class="img-item"><img src="/Icon/vscode.svg" alt="VSCode"></div>
+    <div class="img-item"><img src="/Icon/shopify.png" alt="Shopify"></div>
+    <div class="img-item"><img src="/Icon/Wordpres.svg" alt="WordPress"></div>
+    <div class="img-item"><img src="/Icon/Webflow.svg" alt="Webflow"></div>
+  </div>
+</div>
+
+
 
 <section id="contact">
   <h2>📩 Get in Touch</h2>
@@ -186,10 +213,17 @@
   </div>
 </footer>
 
+
   <!-- SCRIPTS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
-  <script src="https://cdn.lordicon.com/lordicon.js"></script>
-  <script src="js/index.js">
-  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="js/index.js">
+</script>
+<script>
+  const wrapper = document.querySelector('.wrapper');
+  const clone = wrapper.innerHTML;
+  wrapper.innerHTML += clone; // duplicate icons once for seamless scroll
+</script>
+
 </body>
 </html>

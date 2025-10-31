@@ -7,6 +7,7 @@
   --accent-color: #ff4da6;
   --bg-color: #fffaf5;
   --text-color: #222;
+  --duration: 20s;
 }
 
 body.dark {
@@ -262,6 +263,67 @@ h1 {
   width: 5em;
   height: 5em;
 }
+
+
+
+
+/* ANIMATE */
+
+.animate {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    var(--bg-color),
+    rgba(255, 77, 166, 0.15),
+    var(--bg-color)
+  );
+  border: 2px solid var(--accent-2);
+  padding: 1.5rem 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.img-item img {
+  height: 60px;
+  width: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.img-item img:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px var(--accent-color));
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .img-item img {
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-item img {
+    height: 35px;
+  }
+}
+
+
 
 /* 🧠 PROJECTS */
 .project {

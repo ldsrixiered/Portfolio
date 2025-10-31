@@ -113,3 +113,5 @@ const logos = [
       logoImg.style.opacity = 1;
     }, 200);
   }
+
+
