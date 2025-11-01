@@ -273,8 +273,7 @@ h1 {
   width: 100%;
   overflow: hidden;
   background: var(--bg-color);
-  border: 2px solid var(--accent-2);
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 }
 
 .wrapper {
