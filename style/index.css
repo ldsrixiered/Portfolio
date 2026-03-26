@@ -592,3 +592,73 @@ footer a:hover {
   }
 }
 
+/* Seo */
+
+.SEO {
+  background-color: var(--accent-2);
+  padding: 5% 7%;
+}
+
+.section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .role {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .results {
+      font-size: 14px;
+      background: #f1f1f1;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #fff;
+      background: #ffbe0b;
+      padding: 10px 15px;
+      border-radius: 8px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .card a:hover {
+      background: #e6a800;
+    }
