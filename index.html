@@ -1,299 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rixie Red Castro</title>
-  <meta name="discription" content="Rixie Home portfolio for VA">
-  
-  <link rel="stylesheet" href="style/index.css">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Rixie Red M. Castro - Web Developer, E-Commerce and SEO Specialist">
+  <title>Rixie Red Castro | Portfolio</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-
-  <nav>
-    <div class="navbar">
-      <div class="logo"><p>Rixie</p></div>
-      <div class="nav-links">
-        <a href="#home"><span>Home</span></a>
-        <a href="#services"><span>Services</span></a>
-        <a href="#skills"><span>Skills</span></a>
-        <a href="#contact"><span>Contact</span></a>
+  <nav class="nav">
+    <div class="wrap nav-in">
+      <a href="#top" class="logo">RRC</a>
+      <div class="links">
+        <a href="#websites">Websites</a>
+        <a href="#social">Social Media</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="theme" aria-label="Toggle dark mode">🌓</button>
       </div>
-      <div class="toggle" id="themeToggle">🌙</div>
-
     </div>
-    
   </nav>
 
+  <main class="wrap" id="top">
+    <header class="hero">
+      <h1>Rixie Red M. Castro</h1>
+      <p class="role">Web Developer &amp; E-Commerce / SEO Specialist</p>
+      <p>5 years of remote experience building, optimizing, and managing websites and online brands. I work with HTML, CSS, JavaScript, Python, and Shopify, backed by technical SEO and social media support.</p>
+      <a class="btn" href="mailto:ldsrixiered@gmail.com">Email me</a>
+      <a class="btn outline" href="https://www.linkedin.com/in/rixie" target="_blank" rel="noopener">LinkedIn</a>
+    </header>
 
-  <div class="container" id="home">
-    
-    <video autoplay muted loop playsinline id="bg-video">
-      <source src="asset/ls.mp4" type="video/mp4">
-    </video>
+    <section class="stats">
+      <div><b data-count="5" data-suffix=" yrs">0</b>Remote experience</div>
+      <div><b>Top 3</b>Google Business Profile</div>
+      <div><b data-count="35" data-prefix="+" data-suffix="%">0</b>Client reviews</div>
+      <div><b data-count="6">0</b>Websites managed</div>
+    </section>
 
-    <h1><span id="text" class="typewriter"></span></h1>
-    <p class="api">We help businesses grow with professional virtual support in marketing, admin, and digital solutions.</p>
-    <div class="btns">
-      <a href="#services" class="btn">Our Services</a>
-      <a href="#contact" class="btn">Contact Us</a>
-    </div>
-  </div>
+    <section id="websites">
+      <h2>Websites I Optimize &amp; Update</h2>
+      <p class="sub">SEO, technical fixes, content, and ongoing updates.</p>
+      <div class="grid" id="siteGrid"></div>
+    </section>
 
-  <section id="skills">
-    <div class="set"></div>
-      <h2>✨ My Expertise ✨</h2>
+    <section id="social">
+      <h2>Social Media, Graphics &amp; Video</h2>
+      <p class="sub">Content creation, graphic design, video editing, admin support, and lead generation.</p>
+      <div class="filters" id="filters"></div>
+      <div class="grid" id="socialGrid"></div>
+    </section>
 
-      <div class="skill">
-        <div class="skill-info">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-          <span>HTML</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" data-percent="90%"></div>
-        </div>
-      </div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="chips" id="chips"></div>
+    </section>
 
-      <div class="skill">
-        <div class="skill-info">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-          <span>CSS</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" data-percent="90%"></div>
-        </div>
-      </div>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>ldsrixiered@gmail.com &middot; +63 975 466 2088 &middot; Tuguegarao City, Cagayan, Philippines</p>
+      <button class="btn" id="copy">Copy email</button>
+      <span id="copied" class="sub"></span>
+    </section>
+  </main>
 
-      <div class="skill">
-        <div class="skill-info">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-          <span>JavaScript</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" data-percent="80%"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-info">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-          <span>Python</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" data-percent="85%"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-info">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress">
-          <span>WordPress</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" data-percent="80%"></div>
-        </div>
-      </div>
-
-  </section>
-
-  
-
-  <section id="services">
-  
-    <h2>Services</h2>
-    <div class="card">
-      <div class="tilt-card" data-tilt>
-        <h3>Social Media Marketing</h3>
-        <p>Social media, managed and mastered.</p>
-        <lord-icon src="https://cdn.lordicon.com/ogjpwrxe.json" trigger="hover"
-        colors="primary:#222222,secondary:#d62828"></lord-icon>
-      </div>
-
-      <div class="tilt-card" data-tilt>
-        <h3>Website Management & SEO</h3>
-        <p>Your website, always updated and SEO-smart.</p>
-        <lord-icon src="https://cdn.lordicon.com/rpviwvwn.json" trigger="hover"
-        colors="primary:#222222,secondary:#d62828"></lord-icon>
-      </div>
-
-      <div class="tilt-card" data-tilt>
-        <h3>Email Marketing</h3>
-        <p>Crafted campaigns that land—and get clicks.</p>
-        <lord-icon src="https://cdn.lordicon.com/xovdoewm.json" trigger="hover"
-        colors="primary:#222222,secondary:#d62828"></lord-icon>
-      </div>
-
-      <div class="tilt-card" data-tilt>
-        <h3>Virtual Assistance</h3>
-        <p>Helping you save time by handling tasks efficiently.</p>
-        <lord-icon src="https://cdn.lordicon.com/exymduqj.json" trigger="hover" colors="primary:#222,secondary:#d62828"> </lord-icon>
-      </div>
-
-      <div class="tilt-card" data-tilt>
-        <h3>Content Creation</h3>
-        <p>Engaging posts, blogs, and graphics for your brand.</p>
-        <lord-icon src="https://cdn.lordicon.com/nocovwne.json" trigger="hover"
-        colors="primary:#222222,secondary:#d62828"></lord-icon>
-      </div>
-
-      <div class="tilt-card" data-tilt>
-        <h3>Data Entry & Admin</h3>
-        <p>Accurate data entry and organized admin support.</p>
-        <lord-icon src="https://cdn.lordicon.com/iltqorsz.json" trigger="hover"
-        colors="primary:#222222,secondary:#d62828"></lord-icon>
-      </div>
-    </div>
-</section>
-
-
-<!-- animatio -->
-
-<div class="animate">
-  <div class="wrapper">
-    <div class="img-item"><img src="Icon/html5-original.svg" alt="HTML"></div>
-    <div class="img-item"><img src="Icon/css3-original.svg" alt="CSS"></div>
-    <div class="img-item"><img src="Icon/JS.svg" alt="JS"></div>
-    <div class="img-item"><img src="Icon/React.svg" alt="React"></div>
-    <div class="img-item"><img src="Icon/Python.svg" alt="Python"></div>
-    <div class="img-item"><img src="Icon/Git.svg" alt="Git"></div>
-    <div class="img-item"><img src="Icon/Github.svg" alt="Github"></div>
-    <div class="img-item"><img src="Icon/Canva.svg" alt="Canva"></div>
-    <div class="img-item"><img src="Icon/Figma.svg" alt="Figma"></div>
-    <div class="img-item"><img src="Icon/Chrome.svg" alt="Chrome"></div>
-    <div class="img-item"><img src="Icon/vscode.svg" alt="VSCode"></div>
-    <div class="img-item"><img src="Icon/shopify.png" alt="Shopify"></div>
-    <div class="img-item"><img src="Icon/Wordpres.svg" alt="WordPress"></div>
-    <div class="img-item"><img src="Icon/Webflow.svg" alt="Webflow"></div>
-  </div>
-</div>
-
-<!-- project -->
-
-<section class="project">
-
-  <div class="portfolio-section">
-    <div class="portfolio-left">
-      <button class="arrow left">&#10094;</button>
-      <img id="logo" src="asset/p23labs.png" alt="Company Logo">
-      <button class="arrow right">&#10095;</button>
-    </div>
-    <div class="portfolio-right">
-      <h2 id="company-name">P23 Labs</h2>
-      <p id="company-desc">P23 Labs is a high-complexity molecular diagnostics laboratory that specializes in providing covid testing kit and advanced genetic diagnostics. </p>
-      <button class="learn-more-btn">Learn More</button>
-    </div>
-  </div>
-  
-
-</section>
-
- 
-<section class=" sample">
-  <h2> Sample Content & <Span>V</Span>ideo</h2>
-
-  <div class="vid">
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-hjJgJEm62I?si=IFYCQ_yrm2B8cjGA&amp;start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1QGiiOvYAA8?si=uu57Ax3IWSk4gLJu&amp;start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SQW6zBOM26U?si=ckFJ78V3VXzEfGa4&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/awMFCzySPt8?si=UQcS8FunEhfOOKUF&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/afu2Xh9ab2s?si=HBwRcadr9bFy4H2M&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/s9BlhrBIn7w?si=lSeegZnElOr9o0wN&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-  </div>
-
-</section>
-
-<section class="SEO">
-  <h2 class="section-title">My SEO Projects</h2>
-
-  <div class="card-container">
-
-    <!-- CARD 1 -->
-    <div class="card">
-      <h3>Perfomance P-Wave</h3>
-      <div class="role">Role: SEO Specialist</div>
-
-      <div class="description">
-        Optimized on-page SEO, improved keyword targeting, and built backlinks for a health-related website.
-      </div>
-
-      <div class="results">
-        ✔ Increased keyword rankings <br>
-        ✔ Improved website traffic <br>
-        ✔ Built high-quality backlinks
-      </div>
-
-      <a href="https://performancepwave.com/" target="_blank" rel="nofollow">
-        Visit performance p-wave
-      </a>
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="card">
-      <h3>Another Project</h3>
-      <div class="role">Role: SEO & Web Designer</div>
-
-      <div class="description">
-        Designed and optimized a business website with SEO-focused structure and fast loading performance.
-      </div>
-
-      <div class="results">
-        ✔ Optimized page speed <br>
-        ✔ SEO-friendly structure <br>
-        ✔ Better user experience
-      </div>
-
-      <a href="#" target="_blank" rel="dofollow">
-        View Project
-      </a>
-    </div>
-
-  </div>
-
-
-</section>
-
-
-
-
-<section id="contact">
-  <h2>📩 Get in Touch</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
- 
-
-<footer>
-  <p>© 2025 Rixie Red Castro | Virtual Assistance Phenomenon</p>
-  <div class="footer-links">
-    <a href="#">LinkedIn</a> |
-    <a href="#">GitHub</a> |
-    <a href="mailto:youremail@example.com">Email Me</a>
-  </div>
-</footer>
-
-
-  <!-- SCRIPTS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
-<script src="https://cdn.lordicon.com/lordicon.js"></script>
-<script src="js/index.js">
-</script>
-<script>
-  const wrapper = document.querySelector('.wrapper');
-  const clone = wrapper.innerHTML;
-  wrapper.innerHTML += clone; // duplicate icons once for seamless scroll
-</script>
-
+  <footer class="wrap">&copy; <span id="yr"></span> Rixie Red M. Castro</footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
