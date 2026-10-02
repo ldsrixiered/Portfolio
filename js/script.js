@@ -1,6 +1,6 @@
 // ===== EDIT YOUR CONTENT HERE =====
 const websites = [
-  { name: "Skin & Tonic", url: "https://www.skinandtonic.pro/", tag: "Shopify store", desc: "Technical SEO, meta/heading/schema fixes, blog content, backend forms, site audits" },
+  { name: "Skin & Tonic", url: "https://www.skinandtonic.pro/", tag: "Website", desc: "Technical SEO, meta/heading/schema fixes, blog content, backend forms, site audits" },
   { name: "Performance P-Wave", url: "https://www.performancepwave.com/", tag: "Website", desc: "SEO optimization and website updates" },
   { name: "Dr. Croley", url: "https://www.drcroley.com/", tag: "Website", desc: "SEO optimization and website updates" },
   { name: "Janice Lee Homes", url: "https://janiceleehomes.com/", tag: "Website", desc: "SEO optimization and website updates" },
